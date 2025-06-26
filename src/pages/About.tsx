@@ -1,5 +1,4 @@
-
-import { CheckCircle, Lightbulb, Handshake, TrendingUp, Zap, BatteryCharging, Sun, Settings, Shield, DollarSign, Bolt } from 'lucide-react';
+import { CheckCircle, Lightbulb, Handshake, TrendingUp, Zap, BatteryCharging, Sun, Settings, Shield, DollarSign, Bolt, Factory, Building2, Award } from 'lucide-react';
 import aboutBg from '../assets/about.jpg';
 
 const About = () => {
@@ -7,25 +6,27 @@ const About = () => {
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
       <section className="relative bg-blue-900 text-white py-20 bg-cover bg-center" style={{ backgroundImage: `url(${aboutBg})` }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Urza India - Powering a Sustainable Tomorrow</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Urza India - Powering Industrial Excellence Through Solar Innovation</h1>
           <p className="text-xl max-w-3xl">
-            Welcome to Urza India, a trusted name in the field of renewable energy.
+            Leading EPC contractor specializing in utility-scale solar installations, industrial energy storage, and comprehensive renewable energy solutions for enterprise clients.
           </p>
         </div>
       </section>
 
       {/* About Us Section */}
-
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-6">About Us</h2>
+          <h2 className="text-3xl font-bold mb-6">About Urza India</h2>
           <p className="mb-4">
-            Founded in 2015 in the serene landscape of Dehradun, Uttarakhand, Urza India was born from a commitment to make sustainable energy accessible and reliable for all. While our company was established in 2015, our core team brings over a decade of collective experience in solar photovoltaic and thermo-technology, forming a deep foundation of expertise and innovation.
+            Established in 2015 in Dehradun, Uttarakhand, Aasna Urza India Pvt. Ltd. has evolved into a premier EPC (Engineering, Procurement, and Construction) contractor specializing in large-scale solar installations for industrial and commercial clients. With over a decade of collective expertise in renewable energy infrastructure, we have successfully delivered 18+ MW of solar capacity across diverse industrial sectors.
           </p>
           <p className="mb-4">
-            Today, Aasna Urza India Pvt. Ltd. is a leading EPC (Engineering, Procurement, and Construction) provider, offering a complete portfolio of solar energy and energy-efficient products. From our headquarters in Dehradun and service offices in New Delhi and Chandigarh, we design, integrate, and build custom solutions that empower homes, businesses, and communities across the nation.
+            Our comprehensive portfolio spans utility-scale solar farms, industrial rooftop installations, energy storage systems, and smart grid integration solutions. Operating from our headquarters in Dehradun with strategic offices in New Delhi and Chandigarh, we serve manufacturing facilities, commercial complexes, government institutions, and utility companies across India.
+          </p>
+          <p className="mb-4">
+            As an ISO-certified organization, we maintain the highest standards in project execution, safety protocols, and quality assurance, ensuring reliable and efficient solar energy solutions that drive industrial competitiveness and sustainability goals.
           </p>
         </div>
       </section>
@@ -33,10 +34,10 @@ const About = () => {
       {/* Our Mission Section */}
       <section className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Our Mission and Vision</h2>
+          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Mission & Vision for Industrial Excellence</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
           <p className="text-xl leading-relaxed mx-auto" style={{ maxWidth: '64rem' }}>
-            We are committed to harnessing the limitless power of the sun to deliver innovative, cost-effective solar energy solutions that are accessible to all, regardless of economic status. Our goal is to empower communities, illuminate homes, and drive sustainable economic growth while protecting the planet. Through continuous innovation and a strong focus on environmental responsibility, we strive to create a cleaner, greener future for current and future generations.
+            We are committed to transforming India's industrial energy landscape by delivering scalable, reliable, and cost-effective solar energy infrastructure. Our mission is to enable industrial enterprises to achieve energy independence, reduce operational costs, and meet sustainability targets through innovative renewable energy solutions. We strive to be the preferred partner for utility-scale solar projects, driving India's transition to clean energy while enhancing industrial competitiveness in the global market.
           </p>
         </div>
       </section>
@@ -44,99 +45,99 @@ const About = () => {
       {/* Why Choose Urza India Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose Urza India?</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Why Industrial Leaders Choose Urza India</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <CheckCircle className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Comprehensive Expertise</h3>
-              <p>We are your one-stop solution for a vast range of services, including Grid-Interactive & Hybrid Solar Power Plants, Solar Thermotechnology, advanced Pumping Solutions, and robust Mounting Structures.</p>
+              <Factory className="h-12 w-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Utility-Scale Expertise</h3>
+              <p>Specialized in multi-megawatt installations with advanced grid integration, energy storage systems, and smart monitoring solutions for industrial applications.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Lightbulb className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Leading-Edge Technology</h3>
-              <p>We leverage modern infrastructure and a highly skilled team to manufacture and implement high-efficiency renewable energy products. Our commitment to quality minimizes waste, accelerates project timelines, and ensures superior performance and warranty.</p>
+              <Award className="h-12 w-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Proven Industrial Track Record</h3>
+              <p>18+ MW of successful installations across manufacturing, hospitality, and government sectors with guaranteed performance and minimal downtime.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Handshake className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Trusted Partnerships</h3>
-              <p>Our quality is backed by our association with industry giants like WAAREE, Luminous, Exide, Bosch, Jaquar, TATA, Adani, Grundfos, and Sungrow, ensuring every component we use meets the highest standards.</p>
+              <Building2 className="h-12 w-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Enterprise-Grade Partnerships</h3>
+              <p>Strategic alliances with tier-1 manufacturers like WAAREE, Luminous, TATA, Adani, and Sungrow ensuring premium components and extended warranties.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <TrendingUp className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Proven Track Record</h3>
-              <p>We are proud to have served a diverse clientele, including government bodies like Himurja and UJVNL, and prestigious brands like ITC Hotels, Marriott, and Lemon Tree Hotels. Our work speaks for itself, with over 1000 satisfied customers and counting.</p>
+              <Shield className="h-12 w-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Comprehensive O&M Services</h3>
+              <p>Long-term maintenance contracts with 24/7 monitoring, predictive maintenance, and guaranteed performance levels for maximum ROI.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Understanding Our Solar Solutions: A Deep Dive into Hybrid Systems */}
+      {/* Industrial Solar Solutions Deep Dive */}
       <section className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">Understanding Our Solar Solutions: A Deep Dive into Hybrid Systems</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Enterprise Solar Infrastructure: Powering Industrial Growth</h2>
           <p className="mb-4 text-center max-w-3xl mx-auto">
-            While we are experts in Grid-Interactive and Hybrid systems, we understand that energy independence is crucial, especially in areas with unreliable grid access. This is where our Hybrid solutions shine.
+            Our industrial solar solutions are engineered for high-performance applications, designed to meet the demanding energy requirements of manufacturing facilities, commercial complexes, and utility-scale projects.
           </p>
           <p className="mb-8 text-center max-w-3xl mx-auto">
-            A Hybrid, or Stand-Alone, solar power system operates completely independently from the main utility grid. It's a self-sufficient power island, generating, storing, and delivering electricity on your terms. This makes it the perfect solution for remote homes, agricultural farms, and any location where grid connectivity is a challenge.
+            From ground-mounted solar farms to integrated energy storage systems, we deliver comprehensive solutions that optimize energy costs, enhance grid stability, and support industrial sustainability initiatives.
           </p>
 
-          <h3 className="text-2xl font-bold mb-6 text-center">Core Components of an Urza Hybrid System</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Core Components of Industrial Solar Systems</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Zap className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">High-Efficiency Solar Panels</h4>
-              <p>We use top-tier Poly-Crystalline or Mono-Crystalline modules that capture maximum sunlight and convert it into DC electricity, forming the powerhouse of your system.</p>
+              <Sun className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Utility-Scale Solar Arrays</h4>
+              <p>High-efficiency mono-crystalline modules with advanced tracking systems, optimized for maximum energy yield in industrial applications.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Settings className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Advanced Solar Inverter</h4>
-              <p>The heart of the system, our inverters (including Hybrid models) expertly convert the DC power from your panels and batteries into the AC power that runs your home appliances.</p>
+              <Zap className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Grid-Scale Inverters</h4>
+              <p>Central and string inverters with advanced grid support functions, reactive power control, and seamless utility integration capabilities.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <BatteryCharging className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Reliable Battery Storage</h4>
-              <p>In a hybrid system, batteries are essential. During the day, excess energy generated by the panels is stored in high-quality batteries (Lead-Acid/SMF or LiFePo4). This stored power ensures your home remains lit and functional through the night and during cloudy days.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Sun className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Intelligent Charge Controller</h4>
-              <p>This device manages the flow of energy. It optimizes the charging of your batteries to extend their lifespan and efficiently directs power to the inverter for immediate use.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Bolt className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Energy Storage Solutions</h4>
-              <p>Advanced battery systems for utility-scale projects and commercial applications, ensuring reliable power supply and grid stability.</p>
+              <h4 className="text-xl font-semibold mb-2">Energy Storage Systems</h4>
+              <p>Lithium-ion battery systems for peak shaving, load balancing, and grid stability, with advanced battery management systems for optimal performance.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <Settings className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Operation & Maintenance</h4>
-              <p>Expert maintenance services to maximize system efficiency, prevent downtime, and extend the life of your solar installation.</p>
+              <h4 className="text-xl font-semibold mb-2">SCADA & Monitoring</h4>
+              <p>Advanced supervisory control and data acquisition systems with real-time monitoring, predictive analytics, and remote diagnostics.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+              <Shield className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Protection Systems</h4>
+              <p>Comprehensive electrical protection including surge arresters, arc fault detection, and advanced relay protection for industrial safety standards.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+              <Factory className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Grid Integration</h4>
+              <p>Seamless integration with existing electrical infrastructure, including power factor correction and harmonic filtering for industrial loads.</p>
             </div>
           </div>
 
-          <h3 className="text-2xl font-bold mt-12 mb-6 text-center">How Does an Urza Hybrid System Work?</h3>
+          <h3 className="text-2xl font-bold mt-12 mb-6 text-center">Industrial Solar Implementation Process</h3>
           <div className="relative flex flex-col items-center">
             <div className="absolute h-full w-1 bg-blue-300 rounded-full" style={{ left: '50%', transform: 'translateX(-50%)' }}></div>
             {[{
-              title: "Step 1: Capture",
-              description: "Solar panels absorb sunlight and generate DC electricity.",
-              icon: <Sun className="h-8 w-8 text-white" />
-            }, {
-              title: "Step 2: Manage",
-              description: "The current flows to a charge controller, which intelligently distributes it.",
+              title: "Phase 1: Energy Audit & Feasibility",
+              description: "Comprehensive load analysis, site assessment, and financial modeling to determine optimal system configuration and ROI projections.",
               icon: <Settings className="h-8 w-8 text-white" />
             }, {
-              title: "Step 3: Power & Store",
-              description: "The charge controller sends electricity to the inverter to power your appliances. Any surplus power is used to charge the batteries.",
-              icon: <BatteryCharging className="h-8 w-8 text-white" />
+              title: "Phase 2: System Design & Engineering",
+              description: "Detailed engineering design with 3D modeling, electrical schematics, structural analysis, and grid impact studies.",
+              icon: <Lightbulb className="h-8 w-8 text-white" />
             }, {
-              title: "Step 4: Convert",
-              description: "The solar inverter converts the DC electricity (from panels or batteries) into usable AC electricity.",
-              icon: <Zap className="h-8 w-8 text-white" />
+              title: "Phase 3: Regulatory Approvals",
+              description: "Complete handling of permits, environmental clearances, grid connection approvals, and utility coordination.",
+              icon: <Shield className="h-8 w-8 text-white" />
             }, {
-              title: "Step 5: Use",
-              description: "The AC power runs your lights, fans, pumps, and other appliances, day or night.",
+              title: "Phase 4: Procurement & Logistics",
+              description: "Strategic sourcing of premium components, quality assurance testing, and coordinated delivery to minimize project timeline.",
+              icon: <Factory className="h-8 w-8 text-white" />
+            }, {
+              title: "Phase 5: Construction & Commissioning",
+              description: "Professional installation by certified technicians with rigorous testing, commissioning, and performance validation.",
               icon: <CheckCircle className="h-8 w-8 text-white" />
             }].map((step, index) => (
               <div key={index} className={`flex items-center w-full mb-8 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}>
@@ -155,27 +156,27 @@ const About = () => {
             ))}
           </div>
 
-          <h3 className="text-2xl font-bold mt-12 mb-6 text-center">Benefits of an Urza Hybrid System</h3>
+          <h3 className="text-2xl font-bold mt-12 mb-6 text-center">Industrial Solar Benefits</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <CheckCircle className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Complete Energy Independence</h4>
-              <p>Say goodbye to power cuts and reliance on an unstable grid. You are in full control of your power supply.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Zap className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Power for Remote Locations</h4>
-              <p>It's the ideal solution for rural villages, farms, and hybrid homes where extending utility lines is impossible or prohibitively expensive.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <DollarSign className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Long-Term Savings</h4>
-              <p>While the initial investment includes batteries, a hybrid system eliminates your monthly electricity bills, leading to significant long-term financial returns.</p>
+              <h4 className="text-xl font-semibold mb-2">Significant Cost Reduction</h4>
+              <p>Reduce electricity costs by 30-70% with long-term price stability and protection against utility rate increases.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Lightbulb className="h-12 w-12 text-blue-600 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">Environmental Responsibility</h4>
-              <p>Generate clean, green electricity and significantly reduce your carbon footprint.</p>
+              <TrendingUp className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Enhanced Energy Security</h4>
+              <p>Reduce dependence on grid electricity with reliable, predictable energy generation and optional backup power capabilities.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+              <Award className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Sustainability Leadership</h4>
+              <p>Achieve carbon neutrality goals, enhance corporate ESG ratings, and demonstrate environmental responsibility to stakeholders.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+              <Handshake className="h-12 w-12 text-blue-600 mb-4" />
+              <h4 className="text-xl font-semibold mb-2">Competitive Advantage</h4>
+              <p>Lower operational costs, improved profit margins, and enhanced market positioning through sustainable business practices.</p>
             </div>
           </div>
         </div>

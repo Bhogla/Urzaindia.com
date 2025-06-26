@@ -1,9 +1,8 @@
-
-import { ArrowRight, Sun, Zap, Power, Timer, ChevronRight, Droplet, PenTool } from 'lucide-react';
+import { ArrowRight, Sun, Zap, Power, Timer, ChevronRight, Droplet, PenTool, Building2, Factory, TrendingUp, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const backgroundImage = 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg';
+  const backgroundImage = 'https://images.pexels.com/photos/9800029/pexels-photo-9800029.jpeg';
 
   return (
     <div>
@@ -18,51 +17,50 @@ const Home = () => {
             backgroundPosition: 'center'
           }}
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-white to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#EAB441' }}>
-            Powering a Sustainable Future with Solar Energy
+            Enterprise Solar Solutions for Industrial & Commercial Success
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            India’s leading provider of solar energy solutions and energy-efficient products since 2015
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl">
+            Powering India's industries with scalable solar infrastructure, energy storage systems, and comprehensive EPC services since 2015
           </p>
           <div className="flex flex-wrap gap-4">
-
             <Link
               to="/products"
               className="bg-[#398bda] hover:bg-blue-700 text-white px-12 py-3 rounded-md font-semibold flex items-center"
             >
-              Know More
+              Explore Solutions
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
-              to="/products"
+              to="/contact"
               className="bg-transparent border border-white hover:bg-white text-white hover:text-blue-900 px-8 py-3 rounded-md font-semibold"
             >
-              Our Solutions
+              Request Consultation
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Our Mission Section */}
+      {/* Value Proposition Section */}
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Our Mission and Vision</h2>
+          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Transforming Industrial Energy Infrastructure</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
           <p className="text-xl leading-relaxed mx-auto" style={{ maxWidth: '64rem' }}>
-            We are committed to harnessing the limitless power of the sun to deliver innovative, cost-effective solar energy solutions that are accessible to all, regardless of economic status. Our goal is to empower communities, illuminate homes, and drive sustainable economic growth while protecting the planet. Through continuous innovation and a strong focus on environmental responsibility, we strive to create a cleaner, greener future for current and future generations.
+            We partner with industrial manufacturers, commercial enterprises, and utility-scale developers to deliver comprehensive solar energy solutions that reduce operational costs, enhance energy security, and meet sustainability goals. Our expertise spans from multi-megawatt solar installations to integrated energy storage systems and smart grid solutions.
           </p>
         </div>
       </section>
 
-      {/* Trusted Partners Section */}
+      {/* Industry Partners Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Trusted By Industry Leaders</h2>
+          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Trusted by Industry Leaders</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 text-center mb-12">We're proud to partner with leading organizations across various sectors</p>
+          <p className="text-xl text-gray-600 text-center mb-12">Powering operations for manufacturing giants, commercial complexes, and government institutions</p>
           
           <div className="flex overflow-hidden relative w-full">
             <div className="flex animate-carousel space-x-8 py-4">
@@ -81,152 +79,152 @@ const Home = () => {
                 />
               ))}
             </div>
-
-          <p className="text-gray-600 text-center mt-12 italic">1000+ Satisfied customers.... continuing</p>
-        </div>
+          </div>
+          <p className="text-gray-600 text-center mt-12 italic">18+ MW installed across industrial and commercial sectors</p>
         </div>
       </section>
 
-      {/* How Solar Rooftop Works Section */}
+      {/* Industrial Solar Infrastructure Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold mb-6">
-                <span className="text-green-500">Harness the Sun.</span>
+                <span className="text-green-500">Scale Your Operations.</span>
                 <br />
-                <span className="text-blue-900">Empower Your World</span>
+                <span className="text-blue-900">Optimize Your Energy Costs</span>
               </h2>
               <p className="text-gray-600 mb-8">
-                Aasna Urza Solar Rooftops delivers customized solar solutions for households,
-                commercial spaces, industries, and utilities — empowering every need with clean,
-                reliable, and sustainable energy
+                Urza India delivers enterprise-grade solar solutions designed for industrial manufacturing, 
+                commercial facilities, and utility-scale projects. Our comprehensive approach includes 
+                energy audits, custom system design, and long-term performance optimization.
               </p>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="bg-yellow-50 p-3 rounded-lg">
-                    <Sun className="h-6 w-6 text-yellow-500" />
+                    <Factory className="h-6 w-6 text-yellow-500" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-900">SOLAR MODULES</h3>
-                    <p className="text-gray-600">Convert sunlight into DC electricity</p>
+                    <h3 className="text-lg font-semibold text-blue-900">UTILITY-SCALE SOLAR FARMS</h3>
+                    <p className="text-gray-600">Multi-megawatt installations with advanced tracking systems and grid integration</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-50 p-3 rounded-lg">
-                    <Zap className="h-6 w-6 text-blue-500" />
+                    <Building2 className="h-6 w-6 text-blue-500" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-900">INVERTER</h3>
-                    <p className="text-gray-600">Converts DC electricity into usable AC electricity</p>
+                    <h3 className="text-lg font-semibold text-blue-900">COMMERCIAL ROOFTOP SYSTEMS</h3>
+                    <p className="text-gray-600">High-capacity rooftop installations for office complexes, warehouses, and retail centers</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="bg-green-50 p-3 rounded-lg">
-                    <Power className="h-6 w-6 text-green-500" />
+                    <Zap className="h-6 w-6 text-green-500" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-900">CONVENTIONAL GRID</h3>
-                    <p className="text-gray-600">Supplies electricity to premises, the sum towards excess electricity is credited to the owner's account</p>
+                    <h3 className="text-lg font-semibold text-blue-900">ENERGY STORAGE INTEGRATION</h3>
+                    <p className="text-gray-600">Battery energy storage systems for load balancing and grid stability</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="bg-orange-50 p-3 rounded-lg">
-                    <Timer className="h-6 w-6 text-orange-500" />
+                    <Shield className="h-6 w-6 text-orange-500" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-blue-900">METERING ARRANGEMENT</h3>
-                    <p className="text-gray-600">To measure how much power your premises use and electricity that the solar power system feeds to the grid</p>
+                    <h3 className="text-lg font-semibold text-blue-900">SMART MONITORING & CONTROL</h3>
+                    <p className="text-gray-600">Advanced SCADA systems for real-time performance monitoring and predictive maintenance</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="relative rounded-lg overflow-hidden h-96 bg-cover bg-center" style={{ backgroundImage: `url('https://i.ibb.co/svBMkyGL/solar.jpg')` }}>
+            <div className="relative rounded-lg overflow-hidden h-96 bg-cover bg-center" style={{ backgroundImage: `url('https://images.pexels.com/photos/9800029/pexels-photo-9800029.jpeg')` }}>
               <div className="absolute bottom-4 right-4 bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold">
-                <p className="text-lg">Sustainable Energy</p>
-                <p className="text-sm">For a Brighter Future</p>
+                <p className="text-lg">Industrial Scale</p>
+                <p className="text-sm">Energy Solutions</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Enterprise Services Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-              Our Products & Services
+              Comprehensive Industrial & Commercial Solutions
             </h2>
             <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We provide a comprehensive solution and a full-service portfolio of solar energy and energy-efficient products, catering to all scales.
+              From feasibility studies to long-term O&M contracts, we provide end-to-end solar energy solutions for enterprise clients.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Solar Photovoltaic */}
+            {/* Utility-Scale Solar */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center gap-3 mb-6">
                 <Sun className="h-8 w-8 text-yellow-500" />
-                <h3 className="text-xl font-bold text-blue-900">Solar Photovoltaic</h3>
+                <h3 className="text-xl font-bold text-blue-900">Utility-Scale Solar</h3>
               </div>
               <ul className="space-y-3 mb-6">
-                <li>Solar Power Plant (Hybrid)</li>
-                <li>Solar Street Lighting System</li>
-                <li>Solar Pumping System</li>
+                <li>Ground-mounted solar farms (5MW+)</li>
+                <li>Floating solar installations</li>
+                <li>Agri-voltaic systems</li>
               </ul>
               <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
                 Learn more <ChevronRight className="h-5 w-5 ml-1" />
               </Link>
             </div>
 
-            {/* Solar Thermo Technology */}
+            {/* Industrial Energy Storage */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center gap-3 mb-6">
                 <Zap className="h-8 w-8 text-blue-500" />
-                <h3 className="text-xl font-bold text-blue-900">Solar Thermo Technology</h3>
+                <h3 className="text-xl font-bold text-blue-900">Energy Storage Systems</h3>
               </div>
               <ul className="space-y-3 mb-6">
-                <li>Solar Water Heating System</li>
-                <li>Solar Space Heating</li>
-                <li>Air Source Heat Pumps</li>
+                <li>Grid-scale battery storage</li>
+                <li>Peak shaving solutions</li>
+                <li>Microgrid integration</li>
               </ul>
               <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
                 Learn more <ChevronRight className="h-5 w-5 ml-1" />
               </Link>
             </div>
 
-            {/* Pumping Solutions */}
+            {/* Commercial Solutions */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <Droplet className="h-8 w-8 text-blue-500" />
-                <h3 className="text-xl font-bold text-blue-900">Pumping Solutions</h3>
+                <Building2 className="h-8 w-8 text-blue-500" />
+                <h3 className="text-xl font-bold text-blue-900">Commercial Systems</h3>
               </div>
               <ul className="space-y-3 mb-6">
-                <li>Commercial Boosting VFD Pumps</li>
-                <li>Household Pumping Solution</li>
+                <li>Office complex installations</li>
+                <li>Warehouse & logistics centers</li>
+                <li>Retail & hospitality sector</li>
               </ul>
               <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
                 Learn more <ChevronRight className="h-5 w-5 ml-1" />
               </Link>
             </div>
 
-            {/* Mounting Structure and BOS */}
+            {/* EPC & O&M Services */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <Zap className="h-8 w-8 text-blue-500" />
-                <h3 className="text-xl font-bold text-blue-900">Battery Energy Storage & Maintenance</h3>
+                <Power className="h-8 w-8 text-blue-500" />
+                <h3 className="text-xl font-bold text-blue-900">EPC & O&M Services</h3>
               </div>
               <ul className="space-y-3 mb-6">
-                <li>Advanced battery systems</li>
-                <li>Expert maintenance services</li>
-                <li>Projects and commercial applications</li>
+                <li>Turnkey project delivery</li>
+                <li>Long-term maintenance contracts</li>
+                <li>Performance optimization</li>
               </ul>
               <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
                 Learn more <ChevronRight className="h-5 w-5 ml-1" />
@@ -236,16 +234,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* The Solar Switch Process Section */}
+      {/* Enterprise Implementation Process */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-              The Solar Switch Made Simple
+              Enterprise Solar Implementation Process
             </h2>
             <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Switching to solar was never this easy. We've got you covered, here's how it works
+              Our structured approach ensures seamless project delivery from initial assessment to long-term operations
             </p>
           </div>
 
@@ -254,11 +252,11 @@ const Home = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200"></div>
 
             <div className="space-y-20">
-              {/* Free In-home Consultation */}
+              {/* Energy Audit & Feasibility */}
               <div className="flex items-center justify-center relative">
                 <div className="w-1/2 pr-16 text-right">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Free In-home Consultation</h3>
-                  <p className="text-gray-600">A knowledgeable consultant will survey your home, assess your generated and potential savings and design a custom solar system that suits your roof</p>
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Energy Audit & Feasibility Study</h3>
+                  <p className="text-gray-600">Comprehensive site assessment, load analysis, and financial modeling to determine optimal solar solution for your facility</p>
                 </div>
                 <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
                   <PenTool className="h-8 w-8 text-blue-500" />
@@ -266,74 +264,74 @@ const Home = () => {
                 <div className="w-1/2 pl-16"></div>
               </div>
 
-              {/* Personalized Solar Proposal */}
+              {/* Custom System Design */}
               <div className="flex items-center justify-center relative">
                 <div className="w-1/2 pr-16"></div>
                 <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
-                  <Droplet className="h-8 w-8 text-blue-500" />
+                  <Building2 className="h-8 w-8 text-blue-500" />
                 </div>
                 <div className="w-1/2 pl-16">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Personalized Solar Proposal & Dedicated Manager</h3>
-                  <p className="text-gray-600">Based on your requirements, our team will create a custom proposal for you. A budget Manager is also assigned to answer your queries and keep you updated on the project.</p>
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Custom System Design & Engineering</h3>
+                  <p className="text-gray-600">Detailed engineering design with 3D modeling, electrical schematics, and structural analysis tailored to your industrial requirements</p>
                 </div>
               </div>
 
-              {/* Paperwork and Subsidy */}
+              {/* Regulatory Approvals */}
               <div className="flex items-center justify-center relative">
                 <div className="w-1/2 pr-16 text-right">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Paperwork and Subsidy Assistance</h3>
-                  <p className="text-gray-600">End-to-end paperwork management by us let those files rest, we'll handle all the documentation and subsidy application process</p>
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Regulatory Approvals & Financing</h3>
+                  <p className="text-gray-600">Complete handling of permits, grid connection approvals, and assistance with financing options including green bonds and subsidies</p>
+                </div>
+                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
+                  <Shield className="h-8 w-8 text-blue-500" />
+                </div>
+                <div className="w-1/2 pl-16"></div>
+              </div>
+
+              {/* Project Execution */}
+              <div className="flex items-center justify-center relative">
+                <div className="w-1/2 pr-16"></div>
+                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
+                  <Factory className="h-8 w-8 text-blue-500" />
+                </div>
+                <div className="w-1/2 pl-16">
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Project Execution & Commissioning</h3>
+                  <p className="text-gray-600">Professional installation by certified technicians with minimal disruption to your operations, followed by comprehensive testing and commissioning</p>
+                </div>
+              </div>
+
+              {/* Grid Integration */}
+              <div className="flex items-center justify-center relative">
+                <div className="w-1/2 pr-16 text-right">
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Grid Integration & Synchronization</h3>
+                  <p className="text-gray-600">Seamless integration with existing electrical infrastructure and utility grid connection with advanced protection systems</p>
+                </div>
+                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
+                  <Zap className="h-8 w-8 text-yellow-500" />
+                </div>
+                <div className="w-1/2 pl-16"></div>
+              </div>
+
+              {/* Performance Monitoring */}
+              <div className="flex items-center justify-center relative">
+                <div className="w-1/2 pr-16"></div>
+                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
+                  <TrendingUp className="h-8 w-8 text-green-500" />
+                </div>
+                <div className="w-1/2 pl-16">
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Performance Monitoring & Analytics</h3>
+                  <p className="text-gray-600">Real-time monitoring dashboard with AI-powered analytics for performance optimization and predictive maintenance</p>
+                </div>
+              </div>
+
+              {/* Long-term O&M */}
+              <div className="flex items-center justify-center relative">
+                <div className="w-1/2 pr-16 text-right">
+                  <h3 className="text-xl font-bold text-blue-900 mb-2">Long-term O&M Partnership</h3>
+                  <p className="text-gray-600">Comprehensive maintenance contracts with guaranteed performance levels, regular inspections, and 24/7 technical support</p>
                 </div>
                 <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
                   <Power className="h-8 w-8 text-blue-500" />
-                </div>
-                <div className="w-1/2 pl-16"></div>
-              </div>
-
-              {/* Professional Installation */}
-              <div className="flex items-center justify-center relative">
-                <div className="w-1/2 pr-16"></div>
-                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
-                  <Zap className="h-8 w-8 text-blue-500" />
-                </div>
-                <div className="w-1/2 pl-16">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Step-by-step Professional & Safe Installation</h3>
-                  <p className="text-gray-600">Once you validate the electrical drawings, your solar system will be installed by our team of certified technicians in a safe and professional manner.</p>
-                </div>
-              </div>
-
-              {/* Grid Connection */}
-              <div className="flex items-center justify-center relative">
-                <div className="w-1/2 pr-16 text-right">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Connection to the Grid</h3>
-                  <p className="text-gray-600">We coordinate with the discom to connect your system to the power grid and install a new electricity meter</p>
-                </div>
-                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
-                  <Sun className="h-8 w-8 text-yellow-500" />
-                </div>
-                <div className="w-1/2 pl-16"></div>
-              </div>
-
-              {/* Power On */}
-              <div className="flex items-center justify-center relative">
-                <div className="w-1/2 pr-16"></div>
-                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
-                  <Timer className="h-8 w-8 text-green-500" />
-                </div>
-                <div className="w-1/2 pl-16">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Power On Your New System</h3>
-                  <p className="text-gray-600">Switch on your system to enjoy reduced electricity bills and an energy-independent future</p>
-                </div>
-              </div>
-
-              {/* Maintenance */}
-              <div className="flex items-center justify-center relative">
-                <div className="w-1/2 pr-16 text-right">
-                  <h3 className="text-xl font-bold text-blue-900 mb-2">Deep Cleaning and Maintenance</h3>
-                  <p className="text-gray-600">We'll call you to schedule quarterly deep cleaning and preventive health checks of your system for 5 years</p>
-                </div>
-                <div className="absolute z-10 bg-white p-4 rounded-full border-4 border-blue-200">
-                  <Droplet className="h-8 w-8 text-blue-500" />
                 </div>
                 <div className="w-1/2 pl-16"></div>
               </div>
