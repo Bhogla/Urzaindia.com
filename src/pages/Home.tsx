@@ -21,18 +21,19 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-x-0 bottom-0 h-1/6 bg-gradient-to-t from-white to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#EAB441' }}>
             Powering a Sustainable Future with Solar Energy
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-            Leading provider of comprehensive solar energy solutions and energy-efficient products in India since 2015.
+            India’s leading provider of solar energy solutions and energy-efficient products since 2015
           </p>
           <div className="flex flex-wrap gap-4">
+
             <Link
-              to="/contact"
-              className="bg-[rgb(234,179,8)] hover:bg-yellow-600 text-white px-12 py-3 rounded-md font-semibold flex items-center"
+              to="/products"
+              className="bg-[#398bda] hover:bg-blue-700 text-white px-12 py-3 rounded-md font-semibold flex items-center"
             >
-              Get Started
+              Know More
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
@@ -42,6 +43,17 @@ const Home = () => {
               Our Solutions
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Our Mission Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-blue-900 text-center mb-4">Our Mission and Vision</h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+          <p className="text-xl leading-relaxed mx-auto" style={{ maxWidth: '64rem' }}>
+            We are committed to harnessing the limitless power of the sun to deliver innovative, cost-effective solar energy solutions that are accessible to all, regardless of economic status. Our goal is to empower communities, illuminate homes, and drive sustainable economic growth while protecting the planet. Through continuous innovation and a strong focus on environmental responsibility, we strive to create a cleaner, greener future for current and future generations.
+          </p>
         </div>
       </section>
 
@@ -55,27 +67,23 @@ const Home = () => {
           <div className="flex overflow-hidden relative w-full">
             <div className="flex animate-carousel space-x-8 py-4">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17].map((num) => (
-                <img 
+                <div 
                   key={num}
-                  src={`/src/assets/companylogos/${num}${num === 4 ? '.jpg' : '.png'}`}
-                  alt={`Partner Logo ${num}`}
-                  className="h-20 w-auto object-contain min-w-[150px]"
+                  className={`h-20 w-auto object-contain min-w-[150px] company-logo-${num}`}
                 />
               ))}
             </div>
             <div className="flex animate-carousel space-x-8 py-4" aria-hidden="true">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17].map((num) => (
-                <img 
+                <div 
                   key={`clone-${num}`}
-                  src={`/src/assets/companylogos/${num}${num === 4 ? '.jpg' : '.png'}`}
-                  alt={`Partner Logo ${num}`}
-                  className="h-20 w-auto object-contain min-w-[150px]"
+                  className={`h-20 w-auto object-contain min-w-[150px] company-logo-${num}`}
                 />
               ))}
             </div>
-          </div>
 
           <p className="text-gray-600 text-center mt-12 italic">1000+ Satisfied customers.... continuing</p>
+        </div>
         </div>
       </section>
 
@@ -138,14 +146,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="/src/assets/solar.png"
-                  alt="Solar Panel Installation"
-                  className="w-full h-auto"
-                />
-              </div>
+            <div className="relative rounded-lg overflow-hidden h-96 bg-cover bg-center" style={{ backgroundImage: `url('https://i.ibb.co/svBMkyGL/solar.jpg')` }}>
               <div className="absolute bottom-4 right-4 bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold">
                 <p className="text-lg">Sustainable Energy</p>
                 <p className="text-sm">For a Brighter Future</p>
@@ -176,9 +177,8 @@ const Home = () => {
                 <h3 className="text-xl font-bold text-blue-900">Solar Photovoltaic</h3>
               </div>
               <ul className="space-y-3 mb-6">
-                <li>Solar Power Plant (Off Grid / On Grid)</li>
+                <li>Solar Power Plant (Hybrid)</li>
                 <li>Solar Street Lighting System</li>
-                <li>Solar Powered Fence</li>
                 <li>Solar Pumping System</li>
               </ul>
               <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
@@ -220,14 +220,13 @@ const Home = () => {
             {/* Mounting Structure and BOS */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center gap-3 mb-6">
-                <PenTool className="h-8 w-8 text-green-500" />
-                <h3 className="text-xl font-bold text-blue-900">Mounting Structure and BOS</h3>
+                <Zap className="h-8 w-8 text-blue-500" />
+                <h3 className="text-xl font-bold text-blue-900">Battery Energy Storage & Maintenance</h3>
               </div>
               <ul className="space-y-3 mb-6">
-                <li>Solar PV Mounting Structure (Fixed)</li>
-                <li>Solar Single / Dual Axis Manual Tracking</li>
-                <li>Solar Single / Dual Axis Auto Tracking</li>
-                <li>All Solar Plant Components</li>
+                <li>Advanced battery systems</li>
+                <li>Expert maintenance services</li>
+                <li>Projects and commercial applications</li>
               </ul>
               <Link to="/products" className="text-blue-600 hover:text-blue-800 font-semibold flex items-center">
                 Learn more <ChevronRight className="h-5 w-5 ml-1" />

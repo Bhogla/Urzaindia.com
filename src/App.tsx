@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Achievements from './pages/Achievements';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/achievements" element={<Achievements />} />
           </Routes>
         </main>
         <Footer />

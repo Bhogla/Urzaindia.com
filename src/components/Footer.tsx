@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail } from 'lucide-react';
+
 
 const Footer = () => {
   return (
@@ -8,8 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center mb-4">
-              <img src="/src/assets/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
+            <div className="flex items-center mb-4 footer-company-logo">
             </div>
             <p className="text-gray-400">
               Leading name in solar energy and energy-efficient products since 2015.
@@ -33,7 +32,8 @@ const Footer = () => {
               <li><Link to="/products" className="text-gray-400 hover:text-white">Solar Photovoltaic</Link></li>
               <li><Link to="/products" className="text-gray-400 hover:text-white">Solar Thermo Technology</Link></li>
               <li><Link to="/products" className="text-gray-400 hover:text-white">Pumping Solutions</Link></li>
-              <li><Link to="/products" className="text-gray-400 hover:text-white">Mounting Structures</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white">Battery Energy Storage</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white">Operation & Maintenance</Link></li>
             </ul>
           </div>
 
@@ -41,16 +41,16 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center">
-                <MapPin className="h-14 w-14 mr-2 text-blue-400" />
-                <span className="text-gray-400">Raj Tower, Opp. Nirankari Satsang Bhawan, Haridwar Bypass Road, Dehradun-248001</span>
+                <span className="text-gray-400">Ground Floor, Raj Tower, Opp. Sant Nirankari Satsang Bhawan, Kargi Chowk, Dehradun(UK)-248001.</span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-2 text-blue-400" />
-                <a href="tel:+911234567890" className="text-gray-400 hover:text-white">+91 123 456 7890</a>
+                <a href="tel:+919456336900" className="text-gray-400 hover:text-white">+91 9456336900</a>
               </li>
               <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-2 text-blue-400" />
-                <a href="mailto:info@aasnaurza.com" className="text-gray-400 hover:text-white">info@aasnaurza.com</a>
+                <a href="tel:+918126475070" className="text-gray-400 hover:text-white">+91 8126475070</a>
+              </li>
+              <li className="flex items-center">
+                <a href="mailto:info@urzaindia.com" className="text-gray-400 hover:text-white">info@urzaindia.com</a>
               </li>
             </ul>
           </div>

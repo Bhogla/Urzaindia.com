@@ -11,7 +11,8 @@ const Products = () => {
     <div className="bg-white text-gray-800">
       {/* Hero Section */}
       <section className="bg-blue-900 text-white py-20 relative overflow-hidden">
-        <img src={p5} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover opacity-30" />
+        <img src={p5} alt="Hero Background" className="absolute inset-0 w-full h-full object-cover opacity-50" />
+        <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Products & Services</h1>
           <p className="text-xl max-w-3xl mx-auto">
@@ -33,11 +34,11 @@ const Products = () => {
 
           {/* Solar Power Plants */}
           <div className="bg-gray-100 p-8 rounded-lg shadow-md mb-12">
-            <h3 className="text-2xl font-bold mb-4 flex items-center"><Sun className="mr-3" /> Solar Power Plants (Grid-Interactive & Off-Grid/Hybrid)</h3>
-            <p className="mb-4">Whether you want to reduce your electricity bills or go completely off-grid, we have the perfect solution.</p>
+            <h3 className="text-2xl font-bold mb-4 flex items-center"><Sun className="mr-3" /> Solar Power Plants (Grid-Interactive & Hybrid)</h3>
+            <p className="mb-4">Whether you want to reduce your electricity bills or go completely hybrid, we have the perfect solution.</p>
             <ul className="list-disc list-inside space-y-2 mb-6">
-              <li><span className="font-semibold">Grid-Interactive (On-Grid) Systems:</span> Seamlessly connect to the public utility grid. Reduce your monthly electricity bills by generating your own power and export any surplus energy for credit.</li>
-              <li><span className="font-semibold">Off-Grid & Hybrid Systems:</span> Achieve true energy independence. These systems store excess energy in batteries, providing a reliable power supply during grid outages and at night. Ideal for remote locations or critical power needs.</li>
+              <li><span className="font-semibold">Grid-Interactive Systems:</span> Seamlessly connect to the public utility grid. Reduce your monthly electricity bills by generating your own power and export any surplus energy for credit.</li>
+              <li><span className="font-semibold">Hybrid Systems:</span> Achieve true energy independence. These systems store excess energy in batteries, providing a reliable power supply during grid outages and at night. Ideal for remote locations or critical power needs.</li>
             </ul>
             <h4 className="text-xl font-semibold mb-3">Key Features:</h4>
             <ul className="list-disc list-inside space-y-1">
@@ -60,11 +61,7 @@ const Products = () => {
             </ul>
           </div>
 
-          {/* Solar Powered Fencing */}
-          <div className="bg-gray-100 p-8 rounded-lg shadow-md">
-            <h3 className="text-2xl font-bold mb-4 flex items-center"><Shield className="mr-3" /> Solar Powered Fencing</h3>
-            <p>Protect your agricultural land, remote properties, and high-security zones with our effective solar-powered fencing solutions. This system provides a safe, non-lethal deterrent that operates 24/7 using clean energy.</p>
-          </div>
+
         </div>
       </section>
 
@@ -125,7 +122,7 @@ const Products = () => {
             <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <Sprout className="h-12 w-12 text-blue-600 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Solar Water Pumping Solutions</h3>
-              <p>A boon for Indian agriculture, our solar pumps bring water to remote farms, increasing crop yield and bringing smiles to farmers' faces. We pair these pumps with our specialized Auto Dual-Axis Solar Tracking Systems for maximum water flow from dawn to dusk.</p>
+              <p>A boon for Indian agriculture, our solar pumps bring water to remote farms, increasing crop yield and bringing smiles to farmers' faces.</p>
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <Factory className="h-12 w-12 text-blue-600 mb-4" />
@@ -144,29 +141,23 @@ const Products = () => {
       {/* Mounting Structures & Balance of System (BOS) */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 text-center">4. Mounting Structures & Balance of System (BOS)</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">4. Battery Energy Storage & Operation & Maintenance</h2>
           <p className="mb-8 text-center max-w-3xl mx-auto">
-            The foundation of any solar plant is critical to its performance and lifespan. We design and install robust mounting structures that are built to last.
+            Reliable Energy Storage Solutions for Utility Scale Projects, Commercial & Industrial applications. Comprehensive O&M expertise ensuring optimal performance and extended lifespan of solar assets across diverse environments.
           </p>
           <div className="mb-12">
-            <img src={p4} alt="Mounting Structures" className="w-full h-64 object-cover rounded-lg shadow-md mb-6" />
+            <img src={p4} alt="Battery Energy Storage" className="w-full h-64 object-cover rounded-lg shadow-md mb-6" />
           </div>
-          <h3 className="text-2xl font-bold mb-6 text-center">We Specialize in Auto-Tracking Systems for More Yield</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Settings className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Fixed Mounting Structures</h3>
-              <p>Standard, durable structures for a cost-effective installation.</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
               <Bolt className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Single & Dual Axis Manual Tracking</h3>
-              <p>A budget-friendly way to manually adjust panel angles and increase energy generation.</p>
+              <h3 className="text-xl font-semibold mb-2">Energy Storage Solutions</h3>
+              <p>Advanced battery systems for utility-scale projects and commercial applications, ensuring reliable power supply and grid stability.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center">
-              <Car className="h-12 w-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Single & Dual Axis Auto-Tracking</h3>
-              <p>Our premium offering. These smart structures automatically follow the sun's path across the sky</p>
+              <Settings className="h-12 w-12 text-blue-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Operation & Maintenance</h3>
+              <p>Expert maintenance services to maximize system efficiency, prevent downtime, and extend the life of your solar installation.</p>
             </div>
           </div>
         </div>
