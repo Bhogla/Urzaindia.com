@@ -10,7 +10,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { // Adjust this value as needed
+      if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -31,23 +31,22 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img src="https://i.ibb.co/jk1My4Jt/company-logo.png" alt="Company Logo" className="h-16 w-auto" />
-              <span className="ml-2 text-base sm:text-lg md:text-xl font-sans block" style={{ color: '#398bda' }}>An ISO Certified</span>
+              <span className="ml-2 text-base sm:text-lg md:text-xl font-sans block text-burnt-yellow-500 font-semibold">An ISO Certified</span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className={`${isScrolled ? 'text-gray-600' : 'text-white'} hover:text-blue-600`}>Home</Link>
-            <Link to="/products" className={`${isScrolled ? 'text-gray-600' : 'text-white'} hover:text-blue-600`}>Products</Link>
-            <Link to="/achievements" className={`${isScrolled ? 'text-gray-600' : 'text-white'} hover:text-blue-600`}>Achievements</Link>
-            <Link to="/about" className={`${isScrolled ? 'text-gray-600' : 'text-white'} hover:text-blue-600`}>About</Link>
-            <Link to="/contact" className={`${isScrolled ? 'text-gray-600' : 'text-white'} hover:text-blue-600`}>Contact</Link>
-
+            <Link to="/" className={`font-medium transition-colors ${isScrolled ? 'text-charcoal hover:text-steel-blue-800' : 'text-white hover:text-burnt-yellow-500'}`}>Home</Link>
+            <Link to="/products" className={`font-medium transition-colors ${isScrolled ? 'text-charcoal hover:text-steel-blue-800' : 'text-white hover:text-burnt-yellow-500'}`}>Products</Link>
+            <Link to="/achievements" className={`font-medium transition-colors ${isScrolled ? 'text-charcoal hover:text-steel-blue-800' : 'text-white hover:text-burnt-yellow-500'}`}>Achievements</Link>
+            <Link to="/about" className={`font-medium transition-colors ${isScrolled ? 'text-charcoal hover:text-steel-blue-800' : 'text-white hover:text-burnt-yellow-500'}`}>About</Link>
+            <Link to="/contact" className={`font-medium transition-colors ${isScrolled ? 'text-charcoal hover:text-steel-blue-800' : 'text-white hover:text-burnt-yellow-500'}`}>Contact</Link>
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
-            <button onClick={toggleMenu} className={`${isScrolled ? 'text-gray-600' : 'text-white'} hover:text-blue-600`}>
+            <button onClick={toggleMenu} className={`transition-colors ${isScrolled ? 'text-charcoal hover:text-steel-blue-800' : 'text-white hover:text-burnt-yellow-500'}`}>
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -56,13 +55,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
-              <Link to="/" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</Link>
-              <Link to="/products" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Products</Link>
-              <Link to="/achievements" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Achievements</Link>
-              <Link to="/about" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</Link>
-              <Link to="/contact" className="block px-3 py-2 text-gray-600 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</Link>
-
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+              <Link to="/" className="block px-3 py-2 text-charcoal hover:text-steel-blue-800 font-medium" onClick={() => setIsOpen(false)}>Home</Link>
+              <Link to="/products" className="block px-3 py-2 text-charcoal hover:text-steel-blue-800 font-medium" onClick={() => setIsOpen(false)}>Products</Link>
+              <Link to="/achievements" className="block px-3 py-2 text-charcoal hover:text-steel-blue-800 font-medium" onClick={() => setIsOpen(false)}>Achievements</Link>
+              <Link to="/about" className="block px-3 py-2 text-charcoal hover:text-steel-blue-800 font-medium" onClick={() => setIsOpen(false)}>About</Link>
+              <Link to="/contact" className="block px-3 py-2 text-charcoal hover:text-steel-blue-800 font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
             </div>
           </div>
         )}
