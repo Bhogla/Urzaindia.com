@@ -3,25 +3,16 @@ import p7 from '../assets/Product/p7.jpg';
 import a1 from '../assets/achivements/a1.jpg';
 import a2 from '../assets/achivements/a2.jpg';
 import a3 from '../assets/achivements/a3.jpg';
-import a4 from '../assets/achivements/a4.jpg';
 import { useEffect, useState } from 'react';
 
 const Achievements = () => {
   const [counts, setCounts] = useState({
-    capacity: 0,
-    projects: 0,
-    clients: 0,
-    savings: 0,
     streetLights: 0,
     waterHeaters: 0,
     heatPumps: 0
   });
 
   const targetCounts = {
-    capacity: 18,
-    projects: 50,
-    clients: 25,
-    savings: 7000,
     streetLights: 900,
     waterHeaters: 300000,
     heatPumps: 100000
@@ -34,10 +25,6 @@ const Achievements = () => {
 
     const incrementCounts = (step: number) => {
       setCounts({
-        capacity: Math.min(Math.floor((targetCounts.capacity * step) / steps), targetCounts.capacity),
-        projects: Math.min(Math.floor((targetCounts.projects * step) / steps), targetCounts.projects),
-        clients: Math.min(Math.floor((targetCounts.clients * step) / steps), targetCounts.clients),
-        savings: Math.min(Math.floor((targetCounts.savings * step) / steps), targetCounts.savings),
         streetLights: Math.min(Math.floor((targetCounts.streetLights * step) / steps), targetCounts.streetLights),
         waterHeaters: Math.min(Math.floor((targetCounts.waterHeaters * step) / steps), targetCounts.waterHeaters),
         heatPumps: Math.min(Math.floor((targetCounts.heatPumps * step) / steps), targetCounts.heatPumps)
@@ -65,49 +52,6 @@ const Achievements = () => {
           <p className="text-xl max-w-4xl mx-auto">
             Celebrating our success in transforming India's industrial energy landscape through innovative solar solutions and sustainable infrastructure development.
           </p>
-        </div>
-      </section>
-
-      {/* Our Work - Stats Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-blue-900 mb-4">🏆 Our Work</h2>
-            <div className="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Award-winning excellence in renewable energy solutions across India
-            </p>
-          </div>
-
-          <div className="mb-12">
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <img src={a4} alt="Industrial Solar Installation" className="w-full h-80 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Industrial Impact Metrics</h3>
-                <p className="text-lg opacity-90">Powering India's sustainable future</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-5xl font-bold text-blue-900 mb-2">{counts.capacity}+ MW</div>
-              <div className="text-sm font-medium text-gray-600 uppercase tracking-wider">⏳ Solar Capacity Installed</div>
-            </div>
-            <div className="text-center bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-5xl font-bold text-blue-900 mb-2">{counts.projects}+</div>
-              <div className="text-sm font-medium text-gray-600 uppercase tracking-wider">🏗️ Projects Completed</div>
-            </div>
-            <div className="text-center bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-5xl font-bold text-blue-900 mb-2">{counts.clients}+</div>
-              <div className="text-sm font-medium text-gray-600 uppercase tracking-wider">👥 Clients Served</div>
-            </div>
-            <div className="text-center bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-5xl font-bold text-blue-900 mb-2">{counts.savings === 7000 ? '7000+' : counts.savings}</div>
-              <div className="text-sm font-medium text-gray-600 uppercase tracking-wider">Tons CO₂ Reduced</div>
-            </div>
-          </div>
         </div>
       </section>
 
